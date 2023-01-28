@@ -1,19 +1,21 @@
 import { prop } from '@typegoose/typegoose';
-import { IsString } from "class-validator";
+import { IsString } from 'class-validator';
 
 export class ProductDto {
+   @IsString()
+   title: string;
 
    @IsString()
-   title: string
+   info: string;
 
    @IsString()
-   info: string
+   model: string;
 
    @IsString()
-   model: string
+   year: string;
 
-   colors: string[]
+   colors: string[];
 
    @IsString()
-   price: string
+   price: string;
 }
