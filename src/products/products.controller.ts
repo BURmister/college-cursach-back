@@ -12,7 +12,11 @@ export class ProductsController {
    }
 
    @Get()
-   async getAllProducts(@Query('searchTerm') searchTerm?: string, @Query('modelFilter') modelFilter?: string, @Query('colorFilter') colorFilter?: string, ) {
-      return this.productsService.getAll(searchTerm, colorFilter, modelFilter);
+   async getAllProducts(
+      @Query('searchTerm') searchTerm?: string,
+      @Query('modelFilter') modelFilter?: string,
+      @Query('colorsFilter') colorsFilter?: string,
+   ) {
+      return this.productsService.getAll(searchTerm, colorsFilter, modelFilter);
    }
 }
