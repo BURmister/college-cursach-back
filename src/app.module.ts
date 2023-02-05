@@ -4,6 +4,7 @@ import { TypegooseModule } from 'nestjs-typegoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { getMongoConfig } from './config/mongo.config'
+import { FiltersModule } from './filters/filters.module';
 import { ProductsModule } from './products/products.module';
 
 @Module({
@@ -14,7 +15,7 @@ import { ProductsModule } from './products/products.module';
       inject: [ConfigService],
       useFactory: getMongoConfig
     }),
-    ProductsModule
+    ProductsModule, FiltersModule
   ],
   controllers: [AppController],
   providers: [AppService],

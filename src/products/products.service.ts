@@ -11,9 +11,10 @@ export class ProductsService {
       private readonly ProductModel: ModelType<ProductModel>,
    ) {}
 
-   async getAll(searchTerm?: string, colorsFilter?: string, modelFilter?: string) {
+   async getAll(searchTerm?: string, colorsFilter?: string, modelFilter?: string, typeFilter?: string) {
       let colorsOptions = {};
       let modelOptions = {};
+      let typeOptions = {};
 
       if (searchTerm) {
          return this.ProductModel.find({
@@ -48,8 +49,15 @@ export class ProductsService {
          };
       }
 
+      if (typeFilter) {
+         const options = typeFilter.split(',');
+         typeOptions = {
+            $or: options.map((item) => ({ type: new RegExp(item, 'i') })),
+         };
+      }
+
       return this.ProductModel.find({
-         $and: [{ ...modelOptions }, { ...colorsOptions }],
+         $and: [{...typeOptions}, { ...modelOptions }, { ...colorsOptions }],
       }).exec();
    }
 
