@@ -1,0 +1,53 @@
+[{
+  "_id": {
+    "$oid": "63e001fb9677e3bd62b552fe"
+  },
+  "title": "KTM SX 450",
+  "info": "врууум! какой мощный",
+  "producer": "KTM",
+  "model": "KTM SX 450",
+  "colors": [
+    "orange",
+    "white",
+    "black"
+  ],
+  "price": "1.050.000",
+  "power": "60",
+  "cub": "450",
+  "year": "2018",
+  "type": "cross"
+},{
+  "_id": {
+    "$oid": "63e002b69677e3bd62b552ff"
+  },
+  "title": "KTM Duke 250",
+  "info": "резвее, чем кажется",
+  "producer": "KTM",
+  "model": "KTM Duke 250",
+  "colors": [
+    "orange",
+    "white",
+    "black"
+  ],
+  "price": "670.000",
+  "power": "50",
+  "cub": "250",
+  "year": "2020",
+  "type": "sport"
+},{
+  "_id": {
+    "$oid": "63e002fb9677e3bd62b55300"
+  },
+  "title": "Yamaha WR 450",
+  "info": "точно не гитара",
+  "producer": "Yamaha",
+  "model": "Yamaha WR 450",
+  "colors": [
+    "blue"
+  ],
+  "price": "1.100.000",
+  "power": "62",
+  "cub": "450",
+  "year": "2017",
+  "type": "enduro"
+}]

@@ -14,6 +14,15 @@ export class ProductDto {
    @IsString()
    year: string;
 
+   @IsString()
+   type: string;
+
+   @IsString()
+   power: string;
+
+   @IsString()
+   cub: string;
+
    colors: string[];
 
    @IsString()

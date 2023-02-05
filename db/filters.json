@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "63dfdaaad0015036965245d6"
+  },
+  "type": "тип",
+  "filters": [
+    {
+      "name": "кросс",
+      "value": "cross"
+    },
+    {
+      "name": "супермото",
+      "value": "supermoto"
+    },
+    {
+      "name": "дорожные",
+      "value": "road"
+    },
+    {
+      "name": "спорт",
+      "value": "sport"
+    },
+    {
+      "name": "эндуро",
+      "value": "enduro"
+    },
+    {
+      "name": "винтаж",
+      "value": "vintage"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63dfdb25d0015036965245d8"
+  },
+  "type": "производитель",
+  "filters": [
+    {
+      "name": "KTM",
+      "value": "KTM"
+    },
+    {
+      "name": "BMW",
+      "value": "BMW"
+    },
+    {
+      "name": "Harley Davidson",
+      "value": "Harley Davidson"
+    },
+    {
+      "name": "Hysqvarna",
+      "value": "Hysqvarna"
+    },
+    {
+      "name": "Yamaha",
+      "value": "Yamaha"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63dfdb3ed0015036965245da"
+  },
+  "type": "цвет",
+  "filters": [
+    {
+      "name": "красный",
+      "value": "red"
+    },
+    {
+      "name": "белый",
+      "value": "white"
+    },
+    {
+      "name": "оранжевый",
+      "value": "orange"
+    },
+    {
+      "name": "желтый",
+      "value": "yellow"
+    },
+    {
+      "name": "синий",
+      "value": "blue"
+    },
+    {
+      "name": "черный",
+      "value": "black"
+    }
+  ]
+}]

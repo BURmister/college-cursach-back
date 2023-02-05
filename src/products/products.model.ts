@@ -17,6 +17,15 @@ export class ProductModel extends TimeStamps {
    year: string;
 
    @prop()
+   type: string;
+
+   @prop()
+   power: string;
+
+   @prop()
+   cub: string;
+
+   @prop()
    colors: string[];
 
    @prop()
