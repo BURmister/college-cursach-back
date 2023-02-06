@@ -12,6 +12,9 @@ export class ProductDto {
    model: string;
 
    @IsString()
+   img: string;
+
+   @IsString()
    year: string;
 
    @IsString()

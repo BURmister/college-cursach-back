@@ -14,6 +14,9 @@ export class ProductModel extends TimeStamps {
    model: string;
 
    @prop()
+   img: string;
+
+   @prop()
    year: string;
 
    @prop()
