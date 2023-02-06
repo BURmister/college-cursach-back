@@ -5,6 +5,7 @@
   "title": "KTM SX 450",
   "info": "врууум! какой мощный",
   "producer": "KTM",
+  "img": "https://raw.githubusercontent.com/BURmister/college-cursach/master/src/assets/imgs/KTMSX.jpg",
   "model": "KTM SX 450",
   "colors": [
     "orange",
@@ -29,6 +30,7 @@
     "white",
     "black"
   ],
+  "img": "https://raw.githubusercontent.com/BURmister/college-cursach/master/src/assets/imgs/justDuke.png",
   "price": "670.000",
   "power": "50",
   "cub": "250",
@@ -42,6 +44,7 @@
   "info": "точно не гитара",
   "producer": "Yamaha",
   "model": "Yamaha WR 450",
+  "img": "https://raw.githubusercontent.com/BURmister/college-cursach/master/src/assets/imgs/YWR.jpg",
   "colors": [
     "blue"
   ],
@@ -50,4 +53,153 @@
   "cub": "450",
   "year": "2017",
   "type": "enduro"
+},{
+  "_id": {
+    "$oid": "63e13ffeb6abcb9c0a2f9432"
+  },
+  "title": "KTM 690 SMC R",
+  "info": "пушка! гонка!",
+  "producer": "KTM",
+  "model": "KTM 690 SMC R",
+  "img": "https://raw.githubusercontent.com/BURmister/college-cursach/master/src/assets/imgs/ktm690smr.jpg",
+  "colors": [
+    "orange",
+    "black"
+  ],
+  "price": "1.250.000",
+  "power": "70",
+  "cub": "693",
+  "year": "2018",
+  "type": "supermoto"
+},{
+  "_id": {
+    "$oid": "63e140f9b6abcb9c0a2f9434"
+  },
+  "title": "KTM 450 SMR",
+  "info": "супермото для супермена",
+  "producer": "KTM",
+  "model": "KTM 450 SMR",
+  "img": "https://raw.githubusercontent.com/BURmister/college-cursach/master/src/assets/imgs/ktm450smr.jpg",
+  "colors": [
+    "orange",
+    "white",
+    "blue"
+  ],
+  "price": "1.100.000",
+  "power": "65",
+  "cub": "450",
+  "year": "2020",
+  "type": "supermoto"
+},{
+  "_id": {
+    "$oid": "63e141aab6abcb9c0a2f9435"
+  },
+  "title": "KTM 1290 SUPER DUKE R",
+  "info": "на 6 передаче улетает в космос",
+  "producer": "KTM",
+  "model": "KTM 1290 SUPER DUKE R",
+  "img": "https://raw.githubusercontent.com/BURmister/college-cursach/master/src/assets/imgs/superDuke.png",
+  "colors": [
+    "orange",
+    "white",
+    "blue"
+  ],
+  "price": "1.300.000",
+  "power": "180",
+  "cub": "1301",
+  "year": "2022",
+  "type": "sport"
+},{
+  "_id": {
+    "$oid": "63e14297b6abcb9c0a2f9436"
+  },
+  "title": "KTM 890 ADVENTURE R ",
+  "info": "врууум! какой мощный",
+  "producer": "KTM",
+  "model": "KTM 890 ADVENTURE R ",
+  "img": "https://raw.githubusercontent.com/BURmister/college-cursach/master/src/assets/imgs/adventureKTM.jpg",
+  "colors": [
+    "orange",
+    "white",
+    "black"
+  ],
+  "price": "1.130.000",
+  "power": "100",
+  "cub": "891",
+  "year": "2022",
+  "type": "enduro"
+},{
+  "_id": {
+    "$oid": "63e1439cb6abcb9c0a2f9437"
+  },
+  "title": "Harley Davidson Street Bob",
+  "info": "такой точно далеко уедет",
+  "producer": "Harley Davidson",
+  "model": "Harley Davidson Street Bob",
+  "img": "https://raw.githubusercontent.com/BURmister/college-cursach/master/src/assets/imgs/HDBOB.webp",
+  "colors": [
+    "black",
+    "red"
+  ],
+  "price": "1.450.000",
+  "power": "170",
+  "cub": "1868",
+  "year": "2022",
+  "type": "road"
+},{
+  "_id": {
+    "$oid": "63e1448db6abcb9c0a2f9438"
+  },
+  "title": "Harley Davidson Fat Bob",
+  "info": "это точно не спорт?",
+  "producer": "Harley Davidson",
+  "model": "Harley Davidson Fat Bob",
+  "img": "https://raw.githubusercontent.com/BURmister/college-cursach/master/src/assets/imgs/FatBOB.webp",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "price": "1.460.000",
+  "power": "170",
+  "cub": "1868",
+  "year": "2022",
+  "type": "road"
+},{
+  "_id": {
+    "$oid": "63e14564b6abcb9c0a2f9439"
+  },
+  "title": "BMW R nineT Scrambler",
+  "info": "винтаж, котрый мы не заслужили",
+  "producer": "BMW",
+  "img": "https://raw.githubusercontent.com/BURmister/college-cursach/master/src/assets/imgs/FatBOB.webp",
+  "model": "BMW R nineT Scrambler",
+  "colors": [
+    "black",
+    "green"
+  ],
+  "price": "1.350.000",
+  "power": "170",
+  "cub": "1170",
+  "year": "2022",
+  "type": "vintage"
+},{
+  "_id": {
+    "$oid": "63e14d44cdbef47a171b91ab"
+  },
+  "title": "Hysqvarna TE 250i",
+  "info": "вы точно его где-то видели",
+  "producer": "Hysqvarna",
+  "model": "Hysqvarna TE 250i",
+  "img": "https://raw.githubusercontent.com/BURmister/college-cursach/master/src/assets/imgs/hys.png",
+  "colors": [
+    "yellow",
+    "white",
+    "black",
+    "purple"
+  ],
+  "price": "1.050.000",
+  "power": "70",
+  "cub": "250",
+  "year": "2021",
+  "type": "cross"
 }]
