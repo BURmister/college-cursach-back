@@ -32,5 +32,5 @@ export class ProductModel extends TimeStamps {
    colors: string[];
 
    @prop()
-   price: string;
+   price: number;
 }
