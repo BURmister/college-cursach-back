@@ -1,8 +1,9 @@
 import { ModelType } from '@typegoose/typegoose/lib/types';
 import { ProductModel } from './products.model';
 import { InjectModel } from 'nestjs-typegoose';
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { Types } from 'mongoose';
+import { ProductDto } from './products.dto';
 
 @Injectable()
 export class ProductsService {
@@ -83,24 +84,28 @@ export class ProductsService {
       return product;
    }
 
-   // async create(userId: Types.ObjectId) {
-   //    const defaultValue: VideoDto = {
-   //       name: '',
-   //       userId: String(userId),
-   //       videoPath: '',
-   //       description: '',
-   //       thumbnailPath: '',
-   //    };
+   async create({ title, info, model, producer, img, year, type, power, cub, colors, price }: ProductDto) {
+      const defaultValue: ProductDto = {
+         title: title,
+         info: info,
+         producer: producer,
+         model: model,
+         img: img,
+         year: year,
+         type: type,
+         power: power,
+         cub: cub,
+         colors: colors,
+         price: price,
+      };
 
-   //    const video = await this.VideoModel.create(defaultValue);
-   //    return video._id;
-   // }
+      const product = await this.ProductModel.create(defaultValue);
+      return product._id;
+   }
 
-   // async delete(_id: string) {
-   //    const deleteVideo = await this.VideoModel.findByIdAndDelete(_id).exec();
-
-   //    if (!deleteVideo) throw new NotFoundException('video not found');
-
-   //    return deleteVideo;
-   // }
+   async delete(_id: Types.ObjectId) {
+      const deleteProduct = await this.ProductModel.findByIdAndDelete(_id).exec();
+      if (!deleteProduct) throw new NotFoundException('product not found');
+      return deleteProduct;
+   }
 }

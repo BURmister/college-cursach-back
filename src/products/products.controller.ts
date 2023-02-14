@@ -1,6 +1,7 @@
-import { Controller, Get, Param, Query } from '@nestjs/common';
+import { Controller, Get, Param, Query, Post, HttpCode, Body, Put } from '@nestjs/common';
 import { ProductsService } from './products.service';
 import { Types } from 'mongoose';
+import { ProductDto } from './products.dto'
 
 @Controller('catalog')
 export class ProductsController {
@@ -22,18 +23,18 @@ export class ProductsController {
       return this.productsService.getAll(searchTerm, colorsFilter, modelFilter, typeFilter, priceFilter);
    }
 
-   // @UsePipes(new ValidationPipe())
-   // @HttpCode(200)
-   // @Post(':id')
-   // @Auth()
-   // async createVideo(@CurrentUser('_id') _id: Types.ObjectId) {
-   //    return this.videoService.create(_id);
-   // }
-   
-   // @HttpCode(200)
-   // @Put(':id')
-   // @Auth()
-   // async deleteVideo(@Param('_id', IdValidationPipe) _id: string) {
-   //    return this.videoService.delete(_id);
-   // }
+   @HttpCode(200)
+   @Post('/add')
+   async addProduct(
+      @Body()
+      body: ProductDto,
+   ) {
+      return this.productsService.create({ ...body });
+   }
+
+   @HttpCode(200)
+   @Put('/delete/:_id')
+   async deleteVideo(@Param('_id') _id: Types.ObjectId) {
+      return this.productsService.delete(_id);
+   }
 }

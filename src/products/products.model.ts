@@ -11,6 +11,9 @@ export class ProductModel extends TimeStamps {
    info: string;
 
    @prop()
+   producer: string
+
+   @prop()
    model: string;
 
    @prop()

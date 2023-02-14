@@ -9,6 +9,9 @@ export class ProductDto {
    info: string;
 
    @IsString()
+   producer: string;
+
+   @IsString()
    model: string;
 
    @IsString()
