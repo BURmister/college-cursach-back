@@ -19,6 +19,4 @@ export class AuthController {
   async register(@Body() dto: AuthDto) {
     return this.authService.register(dto)
   }
-
-
 }

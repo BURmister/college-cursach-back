@@ -54,9 +54,7 @@ export class AuthService {
    async issueAccessToken(userId: string) {
       const data = {_id: userId}
 
-      return await this.jwtService.signAsync( data, {
-         expiresIn: '30d'
-      })
+      return await this.jwtService.signAsync( data )
    }
 
    returnUserFields(user: UserModel) {

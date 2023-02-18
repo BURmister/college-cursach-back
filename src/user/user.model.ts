@@ -10,26 +10,4 @@ export class UserModel extends TimeStamps{
 
    @prop()
    password: string
-
-   @prop()
-   name: string
-
-   @prop()
-   isVerified: boolean
-
-   @prop({default: 0})
-   subscribersCount?: number
-
-   @prop()
-   description: string
-
-   @prop()
-   location: string
-
-   @prop()
-   bannerPath: string
-
-   @prop()
-   avatarPath: string
-
 }

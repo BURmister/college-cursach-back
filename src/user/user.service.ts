@@ -1,4 +1,3 @@
-import { getKeys } from './../utils/getKeys';
 import { genSalt, hash } from 'bcryptjs';
 import { ModelType } from '@typegoose/typegoose/lib/types';
 import { UserModel } from './user.model';
@@ -34,12 +33,6 @@ export class UserService {
       }
 
       user.email = dto.email
-      user.name = dto.name
-      user.description = dto.description
-      user.location = dto.location
-      user.bannerPath = dto.bannerPath
-      user.avatarPath = dto.avatarPath
-
       await user.save()
 
       return "user has been changed"

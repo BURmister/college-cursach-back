@@ -23,10 +23,4 @@ export class UserController {
   async updateProfile(@CurrentUser('_id') _id:Types.ObjectId, @Body() dto: UserDto) {
     return this.userService.updateProfile(_id, dto)
   }
-
-  @Get('most-popular')
-  @Auth()
-  async getMostPopular() {
-    return this.userService.getMostPopular()
-  }
 }
