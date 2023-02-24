@@ -103,7 +103,7 @@ export class ProductsService {
       return product._id;
    }
 
-   async delete(_id: Types.ObjectId) {
+   async delete(_id: string) {
       const deleteProduct = await this.ProductModel.findByIdAndDelete(_id).exec();
       if (!deleteProduct) throw new NotFoundException('product not found');
       return { _id: deleteProduct._id, title: deleteProduct.title };

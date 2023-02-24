@@ -39,7 +39,7 @@ export class ProductsController {
    @HttpCode(200)
    @Put('/delete/:_id')
    @Auth()
-   async deleteVideo(@Param('_id') _id: Types.ObjectId) {
+   async deleteVideo(@Param('_id') _id: string) {
       return this.productsService.delete(_id);
    }
 }

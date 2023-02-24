@@ -31,6 +31,5 @@ export class ProductDto {
 
    colors: string[];
 
-   @IsString()
    price: number;
 }
